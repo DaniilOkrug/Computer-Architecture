@@ -1,0 +1,77 @@
+# Reading pref.tcl
+# do full_adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying B:/Programs/QuartusPrimeLite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {full_adder.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:05:52 on Nov 05,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." full_adder.vo 
+# -- Compiling module full_adder
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	full_adder
+# End time: 20:05:53 on Nov 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week\ 10/ex2 {C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:05:55 on Nov 05,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2" C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 20:05:56 on Nov 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Load canceled
+# vlog -vlog01compat -work work +incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week\ 10/ex2 {C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder_testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:06:04 on Nov 05,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2" C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder_testbench.v 
+# -- Compiling module full_adder_testbench
+# 
+# Top level modules:
+# 	full_adder_testbench
+# End time: 20:06:05 on Nov 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs="+acc"  testbench2
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" testbench2 
+# Start time: 20:06:05 on Nov 05,2020
+# ** Error: (vsim-3170) Could not find 'testbench2'.
+#         Searched libraries:
+#             B:/Programs/QuartusPrimeLite/modelsim_ase/altera/verilog/altera
+#             B:/Programs/QuartusPrimeLite/modelsim_ase/altera/verilog/altera_lnsim
+#             B:/Programs/QuartusPrimeLite/modelsim_ase/altera/verilog/fiftyfivenm
+#             C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/simulation/modelsim/gate_work
+#             C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./full_adder_run_msim_gate_verilog.do PAUSED at line 13
+vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=\"+acc\" work.full_adder_testbench
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" work.full_adder_testbench 
+# Start time: 20:06:05 on Nov 05,2020
+# Loading work.full_adder_testbench
+# Loading work.full_adder
+run -all
+# a= 0 b = 1 carry_in = 0 sum = 1 carry_out = 0
+# a= 0 b = 1 carry_in = 1 sum = 0 carry_out = 1
+# a= 1 b = 0 carry_in = 1 sum = 0 carry_out = 1
+# a= 1 b = 0 carry_in = 0 sum = 1 carry_out = 0
+# a= 0 b = 0 carry_in = 0 sum = 0 carry_out = 0
+# a= 0 b = 0 carry_in = 1 sum = 1 carry_out = 0
+# a= 1 b = 1 carry_in = 1 sum = 1 carry_out = 1
+# a= 1 b = 1 carry_in = 0 sum = 0 carry_out = 1
+quit -sim
+# End time: 20:06:35 on Nov 05,2020, Elapsed time: 0:00:30
+# Errors: 1, Warnings: 0

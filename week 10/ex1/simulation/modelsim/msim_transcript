@@ -1,0 +1,79 @@
+# Reading pref.tcl
+# do half_adder_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying B:/Programs/QuartusPrimeLite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {half_adder.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:58:06 on Nov 05,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." half_adder.vo 
+# -- Compiling module half_adder
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	half_adder
+# End time: 19:58:07 on Nov 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week\ 10/ex1 {C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex1/half_adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:58:08 on Nov 05,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex1" C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex1/half_adder.v 
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# End time: 19:58:09 on Nov 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Load canceled
+# vlog -vlog01compat -work work +incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week\ 10/ex1 {C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex1/half_adder_testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:58:18 on Nov 05,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex1" C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex1/half_adder_testbench.v 
+# -- Compiling module half_adder_testbench
+# 
+# Top level modules:
+# 	half_adder_testbench
+# End time: 19:58:19 on Nov 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" testbench 
+# Start time: 19:58:21 on Nov 05,2020
+# ** Error: (vsim-3170) Could not find 'testbench'.
+#         Searched libraries:
+#             B:/Programs/QuartusPrimeLite/modelsim_ase/altera/verilog/altera
+#             B:/Programs/QuartusPrimeLite/modelsim_ase/altera/verilog/altera_lnsim
+#             B:/Programs/QuartusPrimeLite/modelsim_ase/altera/verilog/fiftyfivenm
+#             C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex1/simulation/modelsim/gate_work
+#             C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex1/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./half_adder_run_msim_gate_verilog.do PAUSED at line 13
+vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=\"+acc\" work.half_adder_testbench
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" work.half_adder_testbench 
+# Start time: 19:58:21 on Nov 05,2020
+# Loading work.half_adder_testbench
+# Loading work.half_adder
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:B:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 0 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+run -all
+# a= 0 b = 1 sum = 1 carry = 0
+# a= 1 b = 0 sum = 1 carry = 0
+# a= 0 b = 0 sum = 0 carry = 0
+# a= 1 b = 1 sum = 0 carry = 1
+# End time: 20:00:00 on Nov 05,2020, Elapsed time: 0:01:39
+# Errors: 1, Warnings: 0

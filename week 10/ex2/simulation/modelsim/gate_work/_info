@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/simulation/modelsim
+vfull_adder
+!s110 1604585156
+!i10b 1
+!s100 ToLnoezGY?RI>QPz]UzYH1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ikf<KKo=H5j6^nJWh_>0XJ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1604584990
+8C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder.v
+FC:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder.v
+!i122 1
+L0 1 26
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1604585155.000000
+!s107 C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2|C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2}
+Z6 tCvgOpt 0
+vfull_adder_testbench
+!s110 1604585165
+!i10b 1
+!s100 lGdi=nATGa0`67e_bfc_R0
+R1
+I<WUSnLmF6I7fL^dC8ji=I2
+R2
+R0
+w1604585030
+8C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder_testbench.v
+FC:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder_testbench.v
+!i122 2
+L0 1 42
+R3
+r1
+!s85 0
+31
+!s108 1604585164.000000
+!s107 C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder_testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2|C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 10/ex2/full_adder_testbench.v|
+!i113 1
+R4
+R5
+R6
+vhard_block
+!s110 1604585153
+!i10b 1
+!s100 ?hIcKzJmmhzn<g:e>O4LJ1
+R1
+IY1@QmWhMhOA[K:4CagJ;W3
+R2
+R0
+w1604585141
+8full_adder.vo
+Ffull_adder.vo
+!i122 0
+L0 283 45
+R3
+r1
+!s85 0
+31
+!s108 1604585152.000000
+!s107 full_adder.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|full_adder.vo|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+.
+R6
