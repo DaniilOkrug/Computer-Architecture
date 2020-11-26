@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/simulation/modelsim
+vcontrol_unit
+!s110 1606397908
+!i10b 1
+!s100 [mi==f7SMQ_MTaLD9DmHI2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3SU3NEeiWm1n0iUZA5MS<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1606397755
+8C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/control_unit.v
+FC:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/control_unit.v
+!i122 2
+L0 1 12
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1606397908.000000
+!s107 C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex|C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/control_unit.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex}
+Z6 tCvgOpt 0
+vhard_block
+!s110 1606397906
+!i10b 1
+!s100 6:P9K>Zk_D0DMelHbkKfX2
+R1
+ID>^Qh^<IR1RhkIKV;=]C71
+R2
+R0
+w1606397892
+8week13.vo
+Fweek13.vo
+!i122 0
+L0 1074 45
+R3
+r1
+!s85 0
+31
+!s108 1606397906.000000
+!s107 week13.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|week13.vo|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+.
+R6
+vtestbench
+!s110 1606397907
+!i10b 1
+!s100 dj50B?cd]C;]K7^Q065163
+R1
+I]X5b:b]RmAZC<4B8cbjNk1
+R2
+R0
+w1606397395
+8C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/testbench.v
+FC:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/testbench.v
+!i122 1
+L0 1 36
+R3
+r1
+!s85 0
+31
+!s108 1606397907.000000
+!s107 C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex|C:/Users/Angel/Documents/GitHub/Computer-Architecture/week 13/ex/testbench.v|
+!i113 1
+R4
+R5
+R6
